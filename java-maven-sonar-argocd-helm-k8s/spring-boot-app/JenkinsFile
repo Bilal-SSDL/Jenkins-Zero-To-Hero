@@ -49,7 +49,7 @@ pipeline {
         environment {
             GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
             GIT_USER_NAME = "Bilal-SSDL"
-            DOCKER_IMAGE = = "bilal786/jenkins-cicd:${BUILD_NUMBER}"
+            DOCKER_IMAGE = "bilal786/jenkins-cicd:${BUILD_NUMBER}"
         }
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
